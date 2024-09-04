@@ -1,0 +1,15 @@
+<!DOCTYPE html><html>
+    <head>
+    </head>
+    <body>
+        <p id="tamanio"></p>
+        <script>
+            const texto = document.getElementById("tamanio");
+            texto.innerHTML = window.innerWidth + "X" + window.innerHeight;
+            window.addEventListener("resize", () =>{
+                const texto = document.getElementById("tamanio");
+                texto.innerHTML = window.innerWidth + "X" + window.innerHeight;
+            })
+        </script>
+    </body>
+</html>
